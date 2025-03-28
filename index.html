@@ -43,6 +43,22 @@
             font-size: 14px;
             color: #888;
         }
+        .refresh-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .refresh-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -59,10 +75,13 @@
             <p><span>User Agent :</span> <span id="userAgent">Chargement...</span></p>
             <p><span>Système d'exploitation détecté :</span> <span id="os">Chargement...</span></p>
         </div>
+
+        <!-- Bouton pour réactualiser la page -->
+        <button class="refresh-btn" onclick="location.reload();">Réactualiser la page</button>
     </div>
 
     <div class="footer">
-        <p>Page générée avec ❤️ par Noham</p>
+        <p>&copy; Noham</p>
     </div>
 
     <script>
@@ -139,3 +158,4 @@
 
 </body>
 </html>
+
